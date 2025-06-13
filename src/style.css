@@ -95,10 +95,15 @@ button:focus-visible {
   }
 }
 
+#word {
+  text-transform: uppercase;
+}
+
 #answer {
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .correct {
