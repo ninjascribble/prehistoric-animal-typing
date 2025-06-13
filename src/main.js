@@ -7,12 +7,20 @@ document.querySelector('#app').innerHTML = `
     <h1 id="word"></h1>
     <div class="card">
       <input id="answer" type="text" />
+      <br/><br/>
+      <button id="reset" type="button">Reset</button>
     </div>
   </div>
 `
 
-setupWord(document.querySelector('#word'))
-setupAnswer(
-  document.querySelector('#answer'),
-  document.querySelector('#word')
-)
+const word = document.querySelector('#word')
+const answer = document.querySelector('#answer')
+const reset = document.querySelector('#reset')
+
+setupWord(word)
+setupAnswer(answer, word)
+
+reset.addEventListener('click', () => {
+  setupWord(word)
+  answer.value = ''
+})
