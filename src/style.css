@@ -94,3 +94,14 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+#answer {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.correct {
+  color: greenyellow;
+}
+
