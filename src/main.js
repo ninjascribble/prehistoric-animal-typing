@@ -6,7 +6,7 @@ document.querySelector('#app').innerHTML = `
   <div>
     <div class="card">
       <h1 id="word"></h1>
-      <input id="answer" type="text" />
+      <input id="answer" type="text" autofocus tabindex="0" />
       <br/><br/>
       <button id="reset" type="button">Reset</button>
       <img id="reward" class="hidden" />
@@ -28,4 +28,5 @@ reset.addEventListener('click', () => {
   reward.src = ''
   answer.classList.remove("correct")
   answer.value = ''
+  answer.focus()
 })
