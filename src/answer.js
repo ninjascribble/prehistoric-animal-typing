@@ -1,12 +1,16 @@
-export function setupAnswer(element, word) {
+export function setupAnswer(element, word, reward) {
     let isCorrect = false;
 
     const setIsCorrect = () => {
         isCorrect = element.value.toUpperCase() === word.textContent.toUpperCase()
         if (isCorrect) {
             element.classList.add("correct")
+            reward.classList.remove("hidden")
+            reward.src = `public/${word.textContent.toLowerCase()}.jpg`
         } else {
             element.classList.remove("correct")
+            reward.classList.add("hidden")
+            reward.src = ''
         }
     }
 

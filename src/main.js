@@ -6,6 +6,7 @@ document.querySelector('#app').innerHTML = `
   <div>
     <h1 id="word"></h1>
     <div class="card">
+      <img id="reward" class="hidden" />
       <input id="answer" type="text" />
       <br/><br/>
       <button id="reset" type="button">Reset</button>
@@ -16,9 +17,10 @@ document.querySelector('#app').innerHTML = `
 const word = document.querySelector('#word')
 const answer = document.querySelector('#answer')
 const reset = document.querySelector('#reset')
+const reward = document.querySelector('#reward')
 
 setupWord(word)
-setupAnswer(answer, word)
+setupAnswer(answer, word, reward)
 
 reset.addEventListener('click', () => {
   setupWord(word)
