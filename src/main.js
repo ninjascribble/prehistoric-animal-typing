@@ -4,12 +4,12 @@ import { setupAnswer } from './answer.js'
 
 document.querySelector('#app').innerHTML = `
   <div>
-    <h1 id="word"></h1>
     <div class="card">
-      <img id="reward" class="hidden" />
+      <h1 id="word"></h1>
       <input id="answer" type="text" />
       <br/><br/>
       <button id="reset" type="button">Reset</button>
+      <img id="reward" class="hidden" />
     </div>
   </div>
 `
@@ -24,5 +24,8 @@ setupAnswer(answer, word, reward)
 
 reset.addEventListener('click', () => {
   setupWord(word)
+  reward.classList.add("hidden")
+  reward.src = ''
+  answer.classList.remove("correct")
   answer.value = ''
 })

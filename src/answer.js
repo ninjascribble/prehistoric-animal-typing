@@ -14,5 +14,9 @@ export function setupAnswer(element, word, reward) {
         }
     }
 
-    element.addEventListener('keyup', () => setIsCorrect())
+    element.addEventListener('keyup', (e) => {
+        if (e.keyCode === 13) { // 13 = enter key
+            setIsCorrect()
+        }
+    })
 }
