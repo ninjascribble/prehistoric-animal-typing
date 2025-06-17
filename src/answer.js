@@ -6,7 +6,7 @@ export function setupAnswer(element, word, reward) {
         if (isCorrect) {
             element.classList.add("correct")
             reward.classList.remove("hidden")
-            reward.src = `public/${word.textContent.toLowerCase()}.jpg`
+            reward.src = `public/${word.textContent.toLowerCase().replace(/\s/g, '_')}.jpg`
         } else {
             element.classList.remove("correct")
             reward.classList.add("hidden")
