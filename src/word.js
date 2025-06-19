@@ -16,6 +16,9 @@ const words = [
     'liopleurodon',
     'pliosaurus',
     'dakosaurus',
+    'deinonychus',
+    'protoceratops',
+    'sinornithosaurus',
 ]
 
 export function setupWord(element) {
