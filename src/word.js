@@ -19,6 +19,7 @@ const words = [
     'deinonychus',
     'protoceratops',
     'sinornithosaurus',
+    'concavenator',
 ]
 
 export function setupWord(element) {
