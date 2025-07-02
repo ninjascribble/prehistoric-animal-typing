@@ -12,7 +12,7 @@ const words = [
     'icthyosaurus',
     'plesiosaurus',
     'dunkleosteus',
-    'archaeopteryx',
+    'archaeopteryx',    
     'liopleurodon',
     'pliosaurus',
     'dakosaurus',
@@ -20,6 +20,10 @@ const words = [
     'protoceratops',
     'sinornithosaurus',
     'concavenator',
+    'anomalocaris',
+    'kaprosuchus',
+    'lystrosaurus',
+    'dimetrodon',
 ]
 
 export function setupWord(element) {
