@@ -24,6 +24,10 @@ const words = [
     'kaprosuchus',
     'lystrosaurus',
     'dimetrodon',
+    'pentaceratops',
+    'protoceratops',
+    'tianyulong',
+    'heterodontosaurus',
 ]
 
 export function setupWord(element) {
