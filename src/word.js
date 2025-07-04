@@ -28,6 +28,8 @@ const words = [
     'protoceratops',
     'tianyulong',
     'heterodontosaurus',
+    'proceratosaurus',
+    'limusaurus',
 ]
 
 export function setupWord(element) {
