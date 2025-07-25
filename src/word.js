@@ -34,6 +34,16 @@ const words = [
     'petrolacosaurus',
     'prionosuchus',
     'pterygotus',
+    'platypterygius',
+    'saurolophus',
+    'spinosaurus',
+    'perucetus',
+    'archelon',
+    'thylacoleo',
+    'titanis',
+    'megalania',
+    'parasaurolophus',
+    'argentavis',
 ]
 
 export function setupWord(element) {
